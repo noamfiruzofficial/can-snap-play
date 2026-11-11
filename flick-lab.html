@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no" />
+  <title>CAN SNAP flick lab</title>
+  <style>
+    html, body { margin: 0; height: 100%; background: #0b0f1a; color: #e9edf5; font: 14px system-ui, sans-serif; overscroll-behavior: none; -webkit-user-select: none; user-select: none; }
+    #wrap { display: flex; flex-direction: column; height: 100%; padding: max(10px, env(safe-area-inset-top)) 12px max(10px, env(safe-area-inset-bottom)); box-sizing: border-box; gap: 8px; }
+    h1 { margin: 0; font-size: 18px; font-style: italic; }
+    #out { flex: 1; overflow: auto; background: #141a2b; border-radius: 12px; padding: 10px; font-size: 13px; line-height: 1.45; }
+    #out b { color: #ffcf3f; }
+    .ok { color: #5dff7a; } .meh { color: #ffd23f; } .bad { color: #ff5a4f; }
+    #sq { position: relative; width: 100%; aspect-ratio: 1; max-width: 520px; align-self: center; background: radial-gradient(circle at 50% 30%, #26314f, #0e1322); border-radius: 16px; touch-action: none; }
+    #sq canvas { position: absolute; inset: 0; width: 100%; height: 100%; }
+    .row { display: flex; gap: 8px; } button { flex: 1; min-height: 42px; border: 0; border-radius: 10px; background: #1c2235; color: #fff; font-weight: 800; }
+    a { color: #36c2ff; }
+  </style>
+  <script type="module" crossorigin src="./assets/flickLab-BBmFUL38.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/overlay-CZP0h_-A.js">
+  <link rel="modulepreload" crossorigin href="./assets/audio-qlsa_jdB.js">
+</head>
+<body>
+  <div id="wrap">
+    <h1>FLICK LAB · <a href="./">back to game</a></h1>
+    <div id="out">Hold in the circle, wait for green, flick up through the marker. Do 10 flicks: some slow, some hard, some soft. Each flick shows what the phone really measured.</div>
+    <div class="row"><button id="copy">Copy report</button><button id="clear">Clear</button></div>
+    <div id="sq"><canvas id="ov"></canvas></div>
+  </div>
+</body>
+</html>

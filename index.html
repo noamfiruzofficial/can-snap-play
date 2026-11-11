@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="theme-color" content="#0b0f1a" />
+  <title>CAN SNAP</title>
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="icon-192.png" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <script type="module" crossorigin src="./assets/main-CA45iFLs.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/overlay-CZP0h_-A.js">
+  <link rel="modulepreload" crossorigin href="./assets/audio-qlsa_jdB.js">
+  <link rel="modulepreload" crossorigin href="./assets/scene-B4_0PcT8.js">
+  <link rel="stylesheet" crossorigin href="./assets/main-CdK9KuSk.css">
+</head>
+<body>
+  <div id="app">
+    <header id="hud" hidden>
+      <div class="pl" id="p0"><div class="nm"></div><div class="bar"><i></i><b></b></div><div class="en"></div></div>
+      <div class="mid"><div class="ex"></div><svg class="clock" viewBox="0 0 36 36"><circle cx="18" cy="18" r="15" /><circle class="fg" cx="18" cy="18" r="15" /></svg></div>
+      <div class="pl r" id="p1"><div class="nm"></div><div class="bar"><i></i><b></b></div><div class="en"></div></div>
+    </header>
+    <main id="arena">
+      <div id="place" hidden><div class="psky"></div><div class="pscene"></div><div class="pedge"></div><div class="pvig"></div></div>
+      <div id="gl"></div>
+      <div id="square"><canvas id="ov"></canvas></div>
+      <div id="fx"></div>
+      <div id="banner"></div>
+      <div id="hint"></div>
+      <div id="coach" hidden></div>
+      <div id="feedback" hidden></div>
+    </main>
+    <footer id="controls" hidden>
+      <button id="bStd" class="mode on">STANDARD</button>
+      <button id="bChg" class="mode">CHARGED <small>⚡2 · ×1.25</small></button>
+      <button id="bGrd" class="mode guard">GUARD <small>⚡1 · −30%</small></button>
+    </footer>
+    <section id="home" class="screen">
+      <div class="topbar">
+        <div class="logo">CAN<span>SNAP</span></div>
+        <div class="pills"><span id="coins" class="pill" title="Coins">🪙 0</span><span id="streak" class="pill" title="Days in a row">🔥 0</span></div>
+      </div>
+      <div id="lvHome" class="lvl"><div class="lv1"><b class="lvN"></b><em class="lvT"></em><span class="lvGain"></span></div><div class="lbar"><i></i></div><small class="lvNext"></small></div>
+      <div class="chips"><button id="passBar" class="passbar"><span class="pl1"><b>SNAP PASS</b><em id="pTier"></em></span><span class="mbar"><i id="pBar"></i></span><small id="pMis"></small><i id="pBadge" class="badge" hidden></i></button><button id="evBar" class="evbar"><span id="evIcon" class="evi"></span><span class="evt"><b id="evName"></b><small id="evLeft"></small></span><span class="mbar"><i id="evProg"></i></span><i id="evBadge" class="badge" hidden></i></button></div>
+      <div id="tradeCard" class="card" hidden>
+        <small>TRADE OFFER</small>
+        <b id="tWho"></b>
+        <span id="tInfo"></span>
+        <button id="tGo" class="cta">ACCEPT TRADE</button>
+      </div>
+      <div id="giftCard" class="card" hidden>
+        <small>A FRIEND SENT YOU A CAN</small>
+        <b id="gWho"></b>
+        <span id="gInfo"></span>
+        <button id="gGo" class="cta">CLAIM IT</button>
+      </div>
+      <div id="friendCard" class="card" hidden>
+        <small>FRIEND INVITE</small>
+        <b id="fWho"></b>
+        <span id="fInfo"></span>
+        <button id="fGo" class="cta">ADD FRIEND</button>
+      </div>
+      <div id="challenge" class="card" hidden>
+        <small>SNAP RUN CHALLENGE · recorded rival</small>
+        <b id="chWho"></b>
+        <span id="chInfo"></span>
+        <button id="chGo" class="cta">DUEL THIS RUN</button>
+      </div>
+      <div class="spacer"></div>
+      <div class="sheet">
+        <div class="picker">
+          <button id="canPrev" aria-label="Previous can">‹</button>
+          <div id="canOpen" role="button"><b id="canName"></b><small id="canSub">YOUR CAN</small></div>
+          <button id="canNext" aria-label="Next can">›</button>
+          <button id="canBuy" class="buy" hidden></button>
+        </div>
+        <button id="jBtn" class="cta playbig"><span>PLAY</span><small id="jSub"></small></button>
+        <div class="row tabs">
+          <button id="rec" class="sec tab"><i>🔗</i>Snap Run</button>
+          <button id="friendsBtn" class="sec tab"><i>👥</i>Friends</button>
+          <button id="raidBtn" class="sec tab" hidden><i>🏴‍☠️</i>Raid<em id="raidBadge" class="badge" hidden>!</em></button>
+          <button id="roomBtn" class="sec tab"><i id="roomIcon">🎨</i><span id="roomName">Room</span></button>
+          <button id="moreBtn" class="sec tab"><i>⚙</i>More</button>
+        </div>
+      </div>
+      <div id="bubbles" aria-hidden="true">
+        <button class="bub" data-hot="cans" tabindex="-1"><b>🥫 CANS</b><i class="badge" hidden></i></button>
+        <button class="bub" data-hot="door" tabindex="-1"><b>⚔️ JOURNEY</b></button>
+        <button class="bub" data-hot="factory" tabindex="-1"><b>🏭</b><small></small></button>
+        <button class="bub up" id="facUpB" tabindex="-1" hidden></button>
+        <button class="bub" data-hot="album" tabindex="-1"><b>📒 ALBUM</b><i class="badge" hidden></i></button>
+        <button class="bub" data-hot="league" tabindex="-1"><b>🏆 LEAGUE</b></button>
+        <button class="bub" data-hot="daily" tabindex="-1"><b>🎯 DAILY</b></button>
+        <button class="bub" data-hot="shop" tabindex="-1"><b>🛒</b></button>
+      </div>
+      <div class="stash" hidden>
+      <button id="shopBtn"></button>
+      <div id="fac" class="fac"><button id="facGo" class="facgo"><span class="fl1"><b>🏭 FACTORY</b><em id="facLv"></em></span><span class="mbar"><i id="facBar"></i></span><small id="facSub"></small><strong id="facAmt"></strong></button><button id="facUp" class="facup"></button></div>
+        <button id="daily" class="sec tile"><b>Daily Can</b><small id="dSub"></small></button>
+        <button id="albumBtn" class="sec tile"><b>Album <i id="packBadge" class="badge" hidden></i></b><small id="aSub"></small></button>
+        <button id="leagueBtn" class="sec">🏆 League</button>
+        <button id="cansBtn" class="sec">🥫 Cans <i id="cnBadge" class="badge" hidden></i></button>
+      </div>
+    </section>
+    <section id="journey" class="screen panel" hidden>
+      <div class="phead"><button class="back" data-back>‹ Home</button><h2>JOURNEY</h2><span id="jStars" class="pill">★ 0</span></div>
+      <div id="stages"></div>
+    </section>
+    <section id="album" class="screen panel" hidden>
+      <div class="phead"><button class="back" data-back>‹ Home</button><h2>ALBUM</h2><span id="tabsPill" class="pill">🎟 0</span></div>
+      <p id="seasonLine" class="season"></p>
+      <button id="openPacks" class="cta" hidden></button>
+      <div class="row"><button id="boardBtn" class="sec">🔁 Trade board</button><button id="myTradesBtn" class="sec">My trades</button></div>
+      <div id="tradePanel" hidden></div>
+      <div id="sets"></div>
+      <p class="fine odds" id="oddsLine"></p>
+    </section>
+    <section id="cardSheet" class="screen dim" hidden>
+      <div id="csCard"></div>
+      <p id="csInfo"></p>
+      <button id="csUse" class="cta">USE THIS CAN</button>
+      <button id="csBuy" class="cta"></button>
+      <div id="csTrade" class="trow" hidden><select id="csWant" aria-label="Can you want"></select><button id="csTradeGo" class="sec">🔁 Offer trade</button></div>
+      <button id="csGift" class="sec">🎁 Send a spare to a friend</button>
+      <input id="csLink" readonly hidden />
+      <button id="csClose" class="sec">Close</button>
+    </section>
+    <section id="leagueScr" class="screen panel" hidden>
+      <div class="phead"><button class="back" data-back>‹ Home</button><h2>LEAGUE</h2><span id="lgLeft" class="pill"></span></div>
+      <div class="ps">
+        <div class="evhero"><span>🏆</span><b id="lgTier"></b></div>
+        <p id="lgInfo" class="season"></p>
+        <div id="lgPending"></div>
+        <button id="lgPlay" class="cta">PLAY TODAY'S DAILY CAN</button>
+        <div id="lgRows"></div>
+        <p class="fine odds">Your best Daily Can score each day adds up for the week. Top 5 move up a league, bottom 5 move down. The server re-checks every run.</p>
+      </div>
+    </section>
+    <section id="friendsScr" class="screen panel" hidden>
+      <div class="phead"><button class="back" data-back>‹ Home</button><h2>FRIENDS</h2><span id="frCode" class="pill"></span></div>
+      <div class="ps">
+        <div id="frMe"></div>
+        <button id="frShare" class="cta">🔗 SEND MY FRIEND LINK</button>
+        <button id="frPush" class="sec" hidden>🔔 Tell me when a friend beats me</button>
+        <input id="frLink" readonly hidden />
+        <div class="trow"><input id="frAdd" maxlength="8" placeholder="FRIEND CODE" autocomplete="off" spellcheck="false" aria-label="Friend code" /><button id="frAddGo" class="sec">Add</button></div>
+        <button id="clubBtn" class="sec clubbtn" hidden><i>🛡</i><span id="clubBtnT">CLUB</span><em id="clubBadge" class="badge" hidden>!</em></button>
+        <h4>THIS WEEK <small>Daily Can total, you vs your friends</small></h4>
+        <p id="frInfo" class="season"></p>
+        <div id="frRows"></div>
+        <button id="frPlay" class="cta">PLAY TODAY'S DAILY CAN</button>
+      </div>
+    </section>
+    <section id="raidScr" class="screen panel" hidden>
+      <div class="phead"><button class="back" data-back>‹ Home</button><h2>RAID</h2><span id="rdLeft" class="pill"></span></div>
+      <div class="ps">
+        <div id="rdDock" class="dock"><div id="rdCrates" class="crates"></div><small id="rdSub"></small><button id="rdCollect" class="cta" hidden></button></div>
+        <div id="rdNews"></div>
+        <h4>TARGETS <small>friends and club mates</small></h4>
+        <p id="rdInfo" class="season"></p>
+        <div id="rdRows"></div>
+        <button id="rdFriends" class="sec" hidden>👥 Add friends to raid</button>
+      </div>
+    </section>
+    <section id="clubScr" class="screen panel" hidden>
+      <div class="phead"><button class="back" id="clBack">‹ Friends</button><h2>CLUB</h2><span id="clCode" class="pill"></span></div>
+      <div class="ps">
+        <p id="clInfo" class="season"></p>
+        <div id="clNone" hidden>
+          <div class="evhero"><span>🛡</span><b>START A CLUB</b></div>
+          <div class="trow"><input id="clName" maxlength="14" placeholder="CLUB NAME" autocomplete="off" spellcheck="false" aria-label="Club name" /><button id="clMake" class="sec">Create</button></div>
+          <div class="trow"><input id="clJoin" maxlength="6" placeholder="CLUB CODE" autocomplete="off" spellcheck="false" aria-label="Club code" /><button id="clJoinGo" class="sec">Join</button></div>
+        </div>
+        <div id="clIn" hidden>
+          <div class="evhero"><span>🛡</span><b id="clTitle"></b></div>
+          <div class="chest"><span class="mbar big"><i id="clBar"></i></span><small id="clGoal"></small><button id="clClaim" class="cta" hidden></button></div>
+          <button id="clShare" class="sec">🔗 Invite to the club</button>
+          <input id="clLink" readonly hidden />
+          <h4>MEMBERS <small id="clCount"></small></h4>
+          <div id="clRows"></div>
+          <button id="clRaid" class="cta">🏴‍☠️ RAID</button>
+          <button id="clLeave" class="sec">Leave club</button>
+        </div>
+      </div>
+    </section>
+    <section id="profSheet" class="screen dim" hidden>
+      <div id="pfCard"></div>
+      <button id="pfAdd" class="cta" hidden>ADD FRIEND</button>
+      <button id="pfBeat" class="cta" hidden>BEAT THEIR SCORE</button>
+      <button id="pfRemove" class="sec" hidden>Remove friend</button>
+      <button id="pfClose" class="sec">Close</button>
+    </section>
+    <section id="eventScr" class="screen panel" hidden>
+      <div class="phead"><button class="back" data-back>‹ Home</button><h2>EVENT</h2><span id="esLeft" class="pill"></span></div>
+      <div class="ps">
+        <div class="evhero"><span id="esIcon"></span><b id="esName"></b></div>
+        <p id="esTwist" class="evtwist"></p>
+        <p id="esTip" class="season"></p>
+        <div class="mbar big"><i id="esBar"></i></div>
+        <p id="esPts" class="season"></p>
+        <button id="esPlay" class="cta">PLAY EVENT DUEL</button>
+        <button id="esClaim" class="cta" hidden></button>
+        <h4>MILESTONES <small>event points from event duels</small></h4>
+        <div id="esMiles"></div>
+      </div>
+    </section>
+    <section id="passScr" class="screen panel" hidden>
+      <div class="phead"><button class="back" data-back>‹ Home</button><h2>SNAP PASS</h2><span id="psTier" class="pill"></span></div>
+      <div class="ps">
+        <div class="mbar big"><i id="psBar"></i></div>
+        <p id="psLine" class="season"></p>
+        <h4>TODAY'S MISSIONS <small>+200 pass XP each · new ones every day</small></h4>
+        <div id="missions"></div>
+        <button id="claimAll" class="cta" hidden>CLAIM REWARDS</button>
+        <h4>REWARDS <small>free track · premium track is a preview, not for sale</small></h4>
+        <div id="tiers"></div>
+      </div>
+    </section>
+    <section id="shopScr" class="screen panel" hidden>
+      <div class="phead"><button class="back" data-back>‹ Home</button><h2>SHOP</h2><span id="shCoins" class="pill">🪙 0</span></div>
+      <div class="shtimer">New deals in <b id="shLeft"></b></div>
+      <div id="shGrid" class="shgrid"></div>
+    </section>
+    <section id="cans" class="screen panel see shelfscr" hidden>
+      <div class="phead"><button class="back" data-back>‹ Home</button><h2>MY CANS</h2><span id="cnCount" class="pill"></span></div>
+      <div class="spacer"></div>
+      <div class="cn">
+        <div class="cninfo"><b id="cnName"></b><span id="cnStars"></span><small id="cnHow"></small></div>
+        <div class="row cnact"><button id="cnUse" class="cta"></button><button id="cnStyle" class="sec" aria-label="Style this can">🎨</button></div>
+        <div id="cnTabs" class="cntabs"></div>
+        <div id="cnShelf" class="shelf"></div>
+      </div>
+    </section>
+    <section id="locker" class="screen panel see" hidden>
+      <div class="phead"><button class="back" data-back>‹ Home</button><h2>LOCKER</h2><span id="lkCoins" class="pill">🪙 0</span></div>
+      <div class="spacer"></div>
+      <div class="lk">
+        <div class="lkcan"><button id="lkPrev" aria-label="Previous can">‹</button><div><b id="lkName"></b><small id="lkXp"></small></div><button id="lkNext" aria-label="Next can">›</button></div>
+        <div class="mbar"><i id="lkBar"></i></div>
+        <h4>TAB FINISH <small>level up a can by playing with it</small></h4>
+        <div id="finishes" class="chips"></div>
+        <h4>SNAP EFFECT <small>plays when you snap their can</small></h4>
+        <div id="fxGrid" class="fxgrid"></div>
+        <button id="fxPreview" class="cta">▶ PREVIEW SNAP</button>
+      </div>
+    </section>
+    <section id="more" class="screen panel" hidden>
+      <div class="phead"><button class="back" data-back>‹ Home</button><h2>MORE</h2><span></span></div>
+      <label class="field">Your name<input id="pName" maxlength="12" placeholder="PLAYER" autocomplete="off" spellcheck="false" /></label>
+      <div class="field">Practice bot<div class="levels"><button data-lv="rookie">Rookie</button><button data-lv="regular" class="on">Regular</button><button data-lv="sharp">Sharp</button></div></div>
+      <div class="field">Look<div class="levels"><button data-look-set="auto">Auto</button><button data-look-set="light">Light</button><button data-look-set="dark">Dark</button></div></div>
+      <div class="toggles"><label><input type="checkbox" id="tSfx" checked /> Sound</label><label><input type="checkbox" id="tHap" checked /> Haptics</label><label><input type="checkbox" id="tRm" /> Reduce motion</label><label><input type="checkbox" id="tFx" /> Arcade FX</label></div>
+      <div class="field">Vibration<div class="trow" style="grid-template-columns:auto 1fr;max-width:none"><select id="hStrength" aria-label="Vibration strength"><option value="0.5">Soft</option><option value="1">Normal</option></select><button id="feelBtn" class="sec">📳 Feel test: tap through every vibration</button></div><small id="hNote" class="fine"></small></div>
+      <button id="play" class="sec">Practice vs bot</button>
+      <button id="pnp" class="sec">2 players · 1 phone</button>
+      <button id="pushBtn" class="sec">🔔 Turn on alerts</button>
+      <p id="pushNote" class="fine" hidden></p>
+      <button id="tut" class="sec">How to play</button>
+      <small id="build" class="fine"></small>
+      <a class="sec linkbtn" href="flick-lab.html">Flick lab: test my swipe</a>
+      <p class="fine">P0 prototype · rules 2.1.0-p0 · progress is saved on this phone</p>
+    </section>
+    <section id="results" class="screen" hidden>
+      <h2 id="rTitle"></h2>
+      <p id="rWhy"></p>
+      <div id="rStats"></div>
+      <div id="lvl" class="lvl" hidden><div class="lv1"><b class="lvN"></b><em class="lvT"></em><span class="lvGain"></span></div><div class="lbar"><i></i></div><small class="lvNext"></small><div id="lvUps"></div></div>
+      <div id="reward" hidden></div>
+      <div id="share" hidden>
+        <button id="shareBtn" class="cta">SEND CHALLENGE LINK</button>
+        <input id="shareUrl" readonly />
+        <p id="shareNote" class="fine"></p>
+      </div>
+      <button id="next" class="cta" hidden>NEXT STOP</button>
+      <button id="again" class="cta">PLAY AGAIN</button>
+      <button id="snapBack" class="sec gold" hidden>🔗 Record my run to snap back</button>
+      <button id="clipBtn" class="sec" hidden>🎬 Save snap clip</button>
+      <button id="homeBtn" class="sec">Home</button>
+    </section>
+    <section id="handoff" class="screen dim" hidden><h2></h2><p>Tap when ready</p></section>
+  </div>
+</body>
+</html>
