@@ -1,0 +1,109 @@
+charge_tick_01.wav|Now.
+charge_tick_02.wav|(clicking)
+charge_tick_03.wav|finger
+charge_tick_04.wav|(clap)
+crush_01.wav|(clapping)
+crush_02.wav|(clapping)
+crush_03.wav|(clapping)
+crush_04.wav|(clapping)
+fizz_01.wav|(clicking)
+fizz_02.wav|(clicking)
+fizz_03.wav|(bell dings)
+fizz_04.wav|(clicking)
+guard_block_01.wav|It's like...
+guard_block_02.wav|Aw.
+guard_block_03.wav|if we eat.
+guard_block_04.wav|the guard.
+guard_up_01.wav|(bell dings)
+guard_up_02.wav|(bell dings)
+guard_up_03.wav|(upbeat music)
+guard_up_04.wav|(metal clanging)
+guard_up_05.wav|(upbeat music)
+guard_up_06.wav|(metal clanging)
+hit_heavy_01.wav|(bell dings)
+hit_heavy_02.wav|(bell dings)
+hit_heavy_03.wav|(clicking)
+hit_heavy_04.wav|(bell dings)
+hit_heavy_05.wav|(bell dings)
+hit_heavy_06.wav|(clicking)
+hit_heavy_07.wav|[BLANK_AUDIO]
+hit_heavy_08.wav|(bell dings)
+hit_light_01.wav|(bell dings)
+hit_light_02.wav|(bell dings)
+hit_light_03.wav|(bell dings)
+hit_light_04.wav|(bell dings)
+hit_light_05.wav|(clicking)
+hit_light_06.wav|(banging)
+hit_light_07.wav|(clicking)
+hit_light_08.wav|(clicks)
+hit_precise_01.wav|[BLANK_AUDIO]
+hit_precise_02.wav|Three.
+hit_precise_03.wav|heat pressure.
+hit_precise_04.wav|(bell dings)
+hit_precise_05.wav|you
+hit_precise_06.wav|Wait.
+snap_01.wav|(claps)
+snap_02.wav|(claps)
+snap_03.wav|(claps)
+snap_04.wav|(buzz)
+snap_05.wav|(bell dings)
+snap_06.wav|(bell dings)
+snap_07.wav|(clicks)
+snap_08.wav|(bell dings)
+spin_01.wav|(clicking)
+spin_02.wav|That was a spinning can again.
+spin_03.wav|(clap)
+strain_01.wav|(claps)
+strain_02.wav|(clicking)
+strain_03.wav|(clicking)
+strain_04.wav|(banging)
+strain_05.wav|(clicking)
+strain_06.wav|[BLANK_AUDIO]
+tab_drop_01.wav|(gavel bangs)
+tab_drop_02.wav|[BLANK_AUDIO]
+tab_drop_03.wav|[BLANK_AUDIO]
+tab_drop_04.wav|[BLANK_AUDIO]
+tab_drop_05.wav|[BLANK_AUDIO]
+tab_drop_06.wav|[BLANK_AUDIO]
+tab_drop_07.wav|[BLANK_AUDIO]
+tab_drop_08.wav|[BLANK_AUDIO]
+voice_01.wav|(claps)
+voice_02.wav|(claps)
+voice_03.wav|(popping)
+voice_04.wav|(claps)
+voice_05.wav|Oh snap.
+voice_06.wav|Snap!
+voice_07.wav|Oh.
+voice_08.wav|Shit.
+voice_09.wav|FU-
+voice_10.wav|Ouch!
+voice_11.wav|Oh.
+voice_12.wav|Oh, yeah.
+voice_13.wav|Snap.
+voice_14.wav|BAM!
+voice_15.wav|BAM!
+voice_16.wav|Oh my god! Oh my god!
+voice_17.wav|Oh my god.
+voice_18.wav|(door slams)
+voice_19.wav|Shock! Shock!
+voice_20.wav|Flock!
+voice_21.wav|C'blow!
+voice_22.wav|Pablam!
+voice_23.wav|Blam.
+voice_24.wav|Oh yeah.
+voice_25.wav|Oh.
+voice_26.wav|Bye.
+voice_27.wav|Ouch!
+voice_28.wav|No!
+voice_29.wav|No.
+voice_30.wav|No.
+voice_31.wav|No way.
+voice_32.wav|Oh no.
+voice_33.wav|Oh, god damn it.
+voice_34.wav|Damn.
+voice_35.wav|*scoff*
+voice_36.wav|(scoffs)
+voice_37.wav|Hello.
+voice_38.wav|Bye!
+voice_39.wav|*clears throat*
+voice_40.wav|[clears throat]

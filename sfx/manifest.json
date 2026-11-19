@@ -1,0 +1,148 @@
+{
+ "hit_light": [
+  "rec/hit_light_01.wav",
+  "rec/hit_light_02.wav",
+  "rec/hit_light_03.wav",
+  "rec/hit_light_04.wav",
+  "rec/hit_light_05.wav",
+  "rec/hit_light_06.wav",
+  "rec/hit_light_07.wav",
+  "rec/hit_light_08.wav",
+  "hit_light_01.wav",
+  "hit_light_02.wav"
+ ],
+ "hit_heavy": [
+  "rec/hit_heavy_01.wav",
+  "rec/hit_heavy_02.wav",
+  "rec/hit_heavy_03.wav",
+  "rec/hit_heavy_04.wav",
+  "rec/hit_heavy_05.wav",
+  "rec/hit_heavy_06.wav",
+  "rec/hit_heavy_07.wav",
+  "rec/hit_heavy_08.wav",
+  "hit_heavy_01.wav"
+ ],
+ "hit_precise": [
+  "rec/hit_precise_01.wav",
+  "rec/hit_precise_02.wav",
+  "rec/hit_precise_03.wav",
+  "rec/hit_precise_04.wav",
+  "hit_precise_01.wav",
+  "hit_precise_02.wav"
+ ],
+ "snap": [
+  "rec/snap_01.wav",
+  "rec/snap_02.wav",
+  "rec/snap_03.wav",
+  "rec/snap_04.wav",
+  "rec/snap_05.wav",
+  "rec/snap_06.wav",
+  "rec/snap_07.wav",
+  "rec/snap_08.wav",
+  "snap_01.wav"
+ ],
+ "fizz": [
+  "rec/fizz_01.wav",
+  "rec/fizz_02.wav",
+  "rec/fizz_03.wav",
+  "rec/fizz_04.wav",
+  "fizz_01.wav"
+ ],
+ "flick": [
+  "flick_01.wav",
+  "flick_02.wav",
+  "flick_03.wav"
+ ],
+ "miss": [
+  "miss_01.wav",
+  "miss_02.wav"
+ ],
+ "strain": [
+  "rec/strain_01.wav",
+  "rec/strain_02.wav",
+  "rec/strain_03.wav",
+  "rec/strain_04.wav",
+  "rec/strain_05.wav",
+  "strain_01.wav"
+ ],
+ "guard_up": [
+  "rec/guard_up_01.wav",
+  "rec/guard_up_02.wav",
+  "rec/guard_up_03.wav",
+  "rec/guard_up_04.wav",
+  "rec/guard_up_05.wav"
+ ],
+ "win": [
+  "win_01.wav"
+ ],
+ "lose": [
+  "lose_01.wav"
+ ],
+ "ui": [
+  "ui_01.wav",
+  "ui_02.wav"
+ ],
+ "charge_tick": [
+  "rec/charge_tick_01.wav",
+  "rec/charge_tick_02.wav"
+ ],
+ "tab_drop": [
+  "rec/tab_drop_01.wav",
+  "rec/tab_drop_02.wav",
+  "rec/tab_drop_03.wav",
+  "rec/tab_drop_04.wav",
+  "rec/tab_drop_05.wav",
+  "rec/tab_drop_06.wav",
+  "rec/tab_drop_07.wav",
+  "rec/tab_drop_08.wav"
+ ],
+ "crush": [
+  "rec/crush_01.wav",
+  "rec/crush_02.wav",
+  "rec/crush_03.wav",
+  "rec/crush_04.wav"
+ ],
+ "spin": [
+  "rec/spin_01.wav",
+  "rec/spin_02.wav",
+  "rec/spin_03.wav"
+ ],
+ "v_snap": [
+  "rec/v_snap_01.wav",
+  "rec/v_snap_02.wav",
+  "rec/v_snap_03.wav"
+ ],
+ "v_hype": [
+  "rec/v_hype_01.wav",
+  "rec/v_hype_02.wav",
+  "rec/v_hype_03.wav",
+  "rec/v_hype_04.wav",
+  "rec/v_hype_05.wav",
+  "rec/v_hype_06.wav"
+ ],
+ "v_hurt": [
+  "rec/v_hurt_01.wav",
+  "rec/v_hurt_02.wav"
+ ],
+ "v_lose": [
+  "rec/v_lose_01.wav",
+  "rec/v_lose_02.wav",
+  "rec/v_lose_03.wav",
+  "rec/v_lose_04.wav",
+  "rec/v_lose_05.wav",
+  "rec/v_lose_06.wav"
+ ],
+ "v_wow": [
+  "rec/v_wow_01.wav",
+  "rec/v_wow_02.wav"
+ ],
+ "guard_block": [
+  "guard_block_01.wav",
+  "guard_block_02.wav"
+ ],
+ "coin": [
+  "town/coin_0a.mp3",
+  "town/coin_0b.mp3",
+  "town/coin_0c.mp3"
+ ]
+}
